@@ -15,7 +15,7 @@ viewBtn.addEventListener('mouseover', () => {
 viewBtn.addEventListener('mouseout', () => {
     let rightArrow = document.querySelector('#right');
     // rightArrow.style.transition = 'transform 1s linear 0s';
-    viewBtn.style.background = 'white';
+    viewBtn.style.background = 'transparent';
     rightArrow.style.transform = 'rotate(0deg)';
 });
 function scrollToTop(scrollDuration) {
