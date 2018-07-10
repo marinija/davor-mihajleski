@@ -1,9 +1,4 @@
 /* Style Develop Davor Mihajleski   */
-@font-face {
-    font-family: Lato;
-    src: url('../fonts/Lato-Regular.ttf');
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -15,8 +10,10 @@
     --font-color: #942155;
     --contact-background: #252934;
 }
-body {
+html, body {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
+    word-spacing: 1px;
+    text-rendering: optimizeLegibility;
 }
 
 a {
@@ -599,7 +596,7 @@ border-top: 28.87px solid #04C2C9;
 
 @media screen and (max-width: 768px) {
     .spacer {
-        padding-top: 20px;
+        margin-top: 30px;
     }
     .navul {
         padding-left: 0;
@@ -677,6 +674,9 @@ border-top: 28.87px solid #04C2C9;
 }
 
 @media(max-width: 600px) {
+    .spacer {
+        margin-top: 30px;
+    }
     .category_container {
         width: 100%;
         display: flex;
