@@ -1,4 +1,5 @@
 $(function () {
+    var offScroll = false;
     $('#view').click(function () {
         $('html, body').animate({
             scrollTop: $("#about").offset().top
@@ -13,13 +14,16 @@ $(function () {
     $(".navul").on("click", "li", function () {
         $(".navul li.active").removeClass("active");
         $(this).addClass("active");
+        offScroll = true;
+        setTimeout(() => {
+            offScroll = false;
+        }, 1000)
     });
     $(window).scroll(function () {
         var scrollDistance = $(window).scrollTop();
-
         // Assign active class to nav links while scolling
         $('.page-section').each(function (i) {
-            if ($(this).position().top <= scrollDistance) {
+            if ($(this).position().top <= scrollDistance && !offScroll) {
                 $('.navul li.active').removeClass('active');
                 $('.navul li').eq(i).addClass('active');
             }
