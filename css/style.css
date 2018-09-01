@@ -186,6 +186,57 @@ h1 {
     margin-left: auto;
 }
 
+/* Skill bar */
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	transition:0.1s linear;
+	transition-property:width, background-color;
+}
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+}
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
 @media (min-width: 768px) {
     .container {
         width: 750px;
@@ -288,46 +339,6 @@ h1 {
     margin-bottom: 15px;
     -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-}
-
-
-.mojcontainer {
-    width: 90%;
-    /* Full width */
-    background-color: #ddd;
-    /* Grey background */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.skills {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    /* Right-align text */
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-right: 20px;
-    /* Add some right padding */
-    line-height: 30px;
-    /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
-    color: white;
-    /* White text color */
-}
-
-.skillset {
-    width: 110px;
-    background: #04C2C9;
-    text-align: center;
 }
 
 .html {
@@ -534,7 +545,7 @@ h1 {
     #contact::after {
         border-width: 80px 384px 0 384px;
     }
-    
+
 
 }
 
@@ -675,7 +686,7 @@ h1 {
         margin-bottom: 12%;
     }
 
-    
+
     .hide {
         height: 0;
     }
@@ -732,11 +743,6 @@ h1 {
         grid-template-columns: 100%;
         grid-gap: 10px;
         font-size: 1.1rem;
-    }
-
-    #centerDiv {
-        padding-left: 25px;
-        width: 95%;
     }
 
     .category_container {
@@ -845,7 +851,7 @@ h1 {
     .text {
         font-size: 1.4rem;
     }
-    
+
     .hide {
         height: 0;
     }

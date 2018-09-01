@@ -53,4 +53,11 @@ $(function () {
     // $('.img-wrap').is(':hidden') {
     //     $(this).css({ "display": "none" });
     // }
+
+    // Skills Bar
+    $('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			width:$(this).attr('data-percent')
+		},3000);
+	});
 })
