@@ -508,7 +508,7 @@ h1 {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 50px 670px 0 670px;
+    border-width: 80px 50vw 0 50vw;
     border-color: #f5f5f5 transparent transparent transparent;
 }
 
@@ -520,74 +520,9 @@ h1 {
     font-weight: 600;
 }
 
-@media(min-width: 300px) {
-    #contact::after {
-        border-width: 50px 160px 0 160px;
-    }
-}
-
-@media(min-width: 350px) {
-    #contact::after {
-        border-width: 80px 180px 0 180px;
-    }
-}
-
 @media(min-width: 400px) and (max-width: 600px) {
-    #contact::after {
-        border-width: 80px 200px 0 200px;
-    }
     .resText {
         margin-bottom: 20px;
-    }
-}
-
-@media(min-width: 760px) {
-    #contact::after {
-        border-width: 80px 384px 0 384px;
-    }
-
-
-}
-
-@media(min-width: 1020px) {
-    #contact::after {
-        border-width: 80px 512px 0 512px;
-    }
-}
-
-@media(min-width: 1240px) {
-    #contact::after {
-        border-width: 80px 640px 0 640px;
-    }
-}
-
-@media(min-width: 1330px) {
-    #contact::after {
-        border-width: 70px 670px 0 670px;
-    }
-}
-
-@media(min-width: 1440px) {
-    #contact::after {
-        border-width: 80px 720px 0 720px;
-    }
-}
-
-@media(min-width: 1600px) {
-    #contact::after {
-        border-width: 80px 800px 0 800px;
-    }
-}
-
-@media(min-width: 1920px) {
-    #contact::after {
-        border-width: 80px 960px 0 960px;
-    }
-}
-
-@media(min-width: 2500px) {
-    #contact::after {
-        border-width: 80px 1280px 0 1280px;
     }
 }
 
@@ -681,12 +616,14 @@ h1 {
 
 
 @media screen and (max-width: 768px) {
+
+  #contact::after {
+      border-width: 60px 50vw 0 50vw;
+  }
     #desc {
         margin-top: 10%;
         margin-bottom: 12%;
     }
-
-
     .hide {
         height: 0;
     }
