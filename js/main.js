@@ -1,3 +1,4 @@
+// Created by Davor
 const viewBtn = document.getElementById('view');
 const scrollTop = document.querySelector('#scroll-top');
 const bar = document.querySelector('.bar');
@@ -14,7 +15,6 @@ viewBtn.addEventListener('mouseover', () => {
 });
 viewBtn.addEventListener('mouseout', () => {
     let rightArrow = document.querySelector('#right');
-    // rightArrow.style.transition = 'transform 1s linear 0s';
     viewBtn.style.background = 'transparent';
     rightArrow.style.transform = 'rotate(0deg)';
 });
@@ -34,16 +34,13 @@ function scrollToTop(scrollDuration) {
         }, 15);
 }
 
-// When the user scrolls the page, execute myFunction 
 window.onscroll = function () { stickyNavBar() };
 
 // Get the navbar
 const navbar = document.querySelector(".navbar");
 
-// Get the offset position of the navbar
 const sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyNavBar() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")

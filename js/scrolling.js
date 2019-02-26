@@ -1,3 +1,4 @@
+// Created by Davor
 $(function () {
     var offScroll = false;
     $('#view').click(function () {
@@ -50,14 +51,10 @@ $(function () {
         $(this).addClass('activetech');
     });
 
-    // $('.img-wrap').is(':hidden') {
-    //     $(this).css({ "display": "none" });
-    // }
-
     // Skills Bar
-    $('.skillbar').each(function(){
-		$(this).find('.skillbar-bar').animate({
-			width:$(this).attr('data-percent')
-		},4000);
-	});
+    $('.skillbar').each(function () {
+        $(this).find('.skillbar-bar').animate({
+            width: $(this).attr('data-percent')
+        }, 4000);
+    });
 })

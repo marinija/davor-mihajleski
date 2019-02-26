@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio Website that is showing my skills as a web developer my past projects technology i was using in my previous projects">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Jquery, Angular">
+    <meta name="description"
+        content="Portfolio Website that is showing my skills as a web developer my past projects technology i was using in my previous projects">
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, Jquery, Angular, Web Developer, Web Designer, Designer, Developer">
     <meta name="author" content="Davor Mihajleski">
 
     <title>Davor Mihajleski | Portfolio Website</title>
@@ -43,7 +45,7 @@
                             </h1>
                         </div>
                         <div class="box2">
-                            <h1>I'm a full-stack web developer.</h1>
+                            <h1>I'm a Front-end web developer.</h1>
                         </div>
                     </div>
                     <button class="btn" id="view">View my work&nbsp;
@@ -51,6 +53,8 @@
                     </button>
                 </div>
             </div>
+        </div>
+        <div id="particles-js"></div>
         </div>
         <div class="navbar">
             <nav id="nav">
@@ -100,13 +104,13 @@
                         <h2 class="fast">Responsive</h2>
                         <p class="parag">My layouts will work on any device, big or small.</p>
                     </div>
-                    <div class="hexagon-section" data-aos="fade-left" data-aos-delay="1200">
+                    <!-- <div class="hexagon-section" data-aos="fade-left" data-aos-delay="1200">
                         <div class="hexagon">
                             <i class="far fa-lightbulb"></i>
                         </div>
                         <h2 class="fast">Intuitive</h2>
                         <p class="parag">Strong preference for easy to use, intuitive UX/UI.</p>
-                    </div>
+                    </div> -->
                     <div class="hexagon-section" data-aos="fade-left" data-aos-delay="1500">
                         <div class="hexagon">
                             <i class="fas fa-rocket"></i>
@@ -120,7 +124,9 @@
                     <div data-aos="fade-right" data-aos-delay="200">
                         <img src="images/davor.jpg" alt="myphoto" class="me">
                         <h2 class="parag" style="margin-bottom: 10px;">Who am I ?</h2>
-                        <p class="parag resText">I'm Full Stack Web Developer from Macedonia. I have serious passion in building web application, responsive designs, and creating intuitive, dynamic user experiences.</p>
+                        <p class="parag resText">I'm Front End Web Developer from Macedonia. I have serious passion in
+                            building web application, responsive designs, and dynamic user
+                            experiences.</p>
                     </div>
                     <div id="centerDiv" data-aos="fade-left" data-aos-delay="400">
                         <div class="skillbar clearfix " data-percent="90%">
@@ -170,7 +176,7 @@
                             <div class="skillbar-bar" style="background: #4288d0;"></div>
                             <div class="skill-bar-percent">30%</div>
                         </div>
-                      
+
                     </div>
                 </div>
                 <!-- The of the container -->
@@ -200,7 +206,7 @@
                 </div>
 
                 <div class="portfolio-img" data-aos="fade-up" data-aos-delay="300">
-                   <div class="img-wrap myproject responsive angular">
+                    <div class="img-wrap myproject responsive angular">
                         <img src="images/checkdecide.png" alt="checkdecide">
                         <div class="img-description">
                             <div id="desc">
@@ -248,12 +254,12 @@
                             <a href="https://marinija.github.io/child-care/" target="_blank">Learn More</a>
                         </div>
                     </div>
-                      <div class="img-wrap myproject responsive javascript">
+                    <div class="img-wrap myproject responsive javascript">
                         <img src="images/roll-the-dice.png" alt="food chef">
                         <div class="img-description">
                             <div id="desc">
                                 <h3>
-                                    Anjoda
+                                    Roll The Dice
                                 </h3>
                                 <p>HTML5 + CSS3 + Javascript</p>
                             </div>
@@ -324,7 +330,8 @@
                     <span>Do you have a question or want to work together ? Feel free to contact me at any time</span>
                 </div>
                 <div class="icons" data-aos="fade-down-left" data-aos-delay="800">
-                    <a href="https://www.linkedin.com/in/davor-mihajleski-48290311b/" class="logo-icons" target="_blank">
+                    <a href="https://www.linkedin.com/in/davor-mihajleski-48290311b/" class="logo-icons"
+                        target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/marinija" class="logo-icons" target="_blank">
@@ -342,7 +349,10 @@
             <a role="button" id="scroll-top" onclick="scrollToTop(800);">
                 <i class="fas fa-angle-double-up"></i>
             </a>
-            <p class="copyright">&copy; 2018 Davor Mihajleski</p>
+            <p class="copyright">&copy;
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> Davor Mihajleski</p>
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -351,6 +361,12 @@
     <script src="js/main.js"></script>
     <script src="js/scrolling.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
     <script>
         AOS.init({
             duration: 400,
