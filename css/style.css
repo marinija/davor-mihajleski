@@ -33,7 +33,9 @@ h1 {
     z-index: 2;
 }
 
-
+#content {
+    display: none;
+}
 
 #particles-js {
     position: absolute;
