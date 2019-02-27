@@ -33,6 +33,8 @@ h1 {
     z-index: 2;
 }
 
+
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -820,3 +822,15 @@ h1 {
         font-size: 1.2rem;
     }
 }
+
+.addMore {
+    cursor: pointer;
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+

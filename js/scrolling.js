@@ -57,4 +57,14 @@ $(function () {
             width: $(this).attr('data-percent')
         }, 4000);
     });
+
+    // Load More Btn
+    $(".box:gt(2)").hide();
+    $("a.addMore").click(function () {
+        const hiddens = $(".box:hidden");
+        hiddens.slice(0, 10).show();
+        if (hiddens.length <= 9) {
+            $(this).remove();
+        }
+    });
 })
